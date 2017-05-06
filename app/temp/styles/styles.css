@@ -428,6 +428,8 @@ template {
 
 *{
     margin: 0;
+    box-sizing: border-box;
+    line-height: 1.8rem;
 }
 
 body{
@@ -440,6 +442,14 @@ img{
     max-width: 100%;
     height: auto;
           
+}
+
+p{
+    margin-bottom: 1.8rem;
+}
+
+a{
+    color: #d59541;
 }
 
 .large-hero {
@@ -466,6 +476,7 @@ img{
   color: #2f5572;
   font-size: 2.4rem;
   margin: 0;
+  line-height: 1.5;
 }
 
 @media(min-width: 530px) {
@@ -530,9 +541,10 @@ img{
 
     padding-left: 18px;
     padding-right: 18px; 
-    max-width: 1200px;
+    max-width: 1236px;
     margin-left: auto;
     margin-right: auto;
+    overflow: hidden;
 }
 
 .wrapper--medium{
@@ -544,9 +556,20 @@ img{
   padding-right: 0;
 }
 
+@media(min-width: 530px) {
+
+  .wrapper {
+    margin-bottom: 3.875rem;
+  }
+}
+
+.wrapper--b-margin{
+  margin-bottom: 1rem;
+}
+
 .page-section{
     
-    padding: 4.5rem;
+    padding: 1.2rem;
 }
 
 @media(min-width: 800px) {
@@ -609,5 +632,56 @@ img{
 
 .headline--b-margin-large{
   margin-bottom: .6em;
+}
+
+.row--gutters {
+  margin-right: -65px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.row--gutters>div {
+  padding-right: 65px;
+}
+
+@media(min-width: 800px) {
+
+  .row__medium-4 {
+    float: left;
+    width: 33.33%;
+  }
+
+  .row__medium-4--larger {
+    width: 37%;
+  }
+
+  .row__medium-8 {
+    float: left;
+    width: 66.66%;
+  }
+
+  .row__medium-8--smaller {
+    width: 63%;
+  }
+}
+
+.generic-content-container p{
+  line-height:1.65;
+  margin: 1.8rem 0;
+}
+
+@media(min-width: 530px) {
+
+  .generic-content-container p {
+    font-size: 1.125rem;
+  }
+}
+
+.generic-content-container p a {
+  font-weight: 700;
 }
 

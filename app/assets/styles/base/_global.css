@@ -1,5 +1,7 @@
 *{
     margin: 0;
+    box-sizing: border-box;
+    line-height: 1.8rem;
 }
 body{
     font-family: 'Roboto', sans-serif;
@@ -12,3 +14,11 @@ img{
     height: auto;
           
 } 
+
+p{
+    margin-bottom: 1.8rem;
+}
+
+a{
+    color: $mainOrange;
+}
