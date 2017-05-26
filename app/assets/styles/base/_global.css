@@ -1,24 +1,17 @@
-*{
-    margin: 0;
-    box-sizing: border-box;
-    line-height: 1.8rem;
-}
-body{
-    font-family: 'Roboto', sans-serif;
-    color: #333;
-     
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
 }
 
-img{
-    max-width: 100%;
-    height: auto;
-          
-} 
-
-p{
-    margin-bottom: 1.8rem;
+img {
+  max-width: 100%;
+  height: auto;
 }
 
-a{
-    color: $mainOrange;
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: $mainOrange;
 }
